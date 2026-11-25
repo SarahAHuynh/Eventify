@@ -1,0 +1,23 @@
+{
+  "round": 3,
+  "pending": {
+    "logistics-dual-absence-welcome-coverage": "logistics",
+    "logistics-budget-shortage-handoff-version": "logistics"
+  },
+  "history": [
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/validation-r1.json",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md",
+    "outputs/demo-02/marketing-r2/marketing.md",
+    "reviews/demo-02/validation-r2.json",
+    "reviews/demo-02/reviewer-r2/review.json"
+  ]
+}

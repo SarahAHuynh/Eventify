@@ -1,0 +1,33 @@
+{
+  "role": "coordinator",
+  "revision": 1,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r4/logistics.json",
+    "outputs/demo-02/logistics-r4/logistics.md",
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md",
+    "outputs/demo-02/marketing-r4/marketing.md",
+    "reviews/demo-02/validation-r4.json",
+    "reviews/demo-02/reviewer-r4/review.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/coordinator-r1/event_package.md"
+  ],
+  "instructions": "Read every dependency and confirm round-four validation and review approval before assembling a self-contained UTF-8 Markdown event package at the expected output path. Use Logistics r4 for the operating plan, Budget r3 and the fictional catalog for purchases and reserve, and Marketing r4 for all three promotional pieces. Reconcile Budget r3's older logistics references against Logistics r4 using the review's verified handoff evidence. Point the package's operational links to the current logistics sections and Budget r3 shortage procedure. Preserve source files and prior revisions. Keep the event facts, operating commitments, financial assumptions and placeholders faithful to the approved evidence.",
+  "acceptance_criteria": [
+    "The package identifies Women in Tech: Connect & Grow on February 19, 2027 for 50 college students at 16:00\u201319:00 local time. The agenda shows, in order, welcome and check-in 16:00\u201316:25, icebreaker 16:25\u201316:45, career panel 16:45\u201317:30, structured networking 17:30\u201318:15, refreshment break 18:15\u201318:40 and closing activity 18:40\u201319:00. Each block includes the approved duties and staffing using only V1 through V6.",
+    "The operating plan includes a supply checklist, pre-opening accessibility checks, accessible materials, participation options and seated refreshment service. It records V4's full route check, alternate entrance or room procedure, and V1 or acting V3's admission hold pending an accessible route.",
+    "Contingencies include triggers, owners and actions for AV or Wi-Fi failure, speaker absence, volunteer absences and refreshment shortages. Preserve Logistics r4's explicit check-in transfers, the V1/V5 overlap and 16:38, 16:42 and 16:45 fallbacks, and V6's desk coverage and written-update duties when V2 is absent, including overlapping V1/V2 absences.",
+    "The budget lists all six approved SKUs with whole-pack quantities, unit prices and line totals: SNACK10 3 \u00d7 1400 = 4200, FRUIT10 3 \u00d7 1000 = 3000, WATER24 3 \u00d7 800 = 2400, TAG25 3 \u00d7 450 = 1350, MARKER4 2 \u00d7 350 = 700 and PRINT25 3 \u00d7 650 = 1950, all in US cents. It shows a 13600-cent subtotal, 16400-cent reserve and 30000-cent total. Venue, tables, chairs, projector and Wi-Fi are provided free.",
+    "Coverage shows 60 food servings, 72 drinks, 75 tags, eight markers and 75 printed copies. Preserve the allocation of 50 double-sided large-print agendas and 25 signs or backups, and the print assumptions to confirm before ordering. Any mention of the conditional snack-to-fruit substitution keeps it outside approved totals.",
+    "Shortage instructions cover the usable-stock recount after releasing held surplus as needed, first-serving priority including seated requests, holding seconds, immediate item-level escalation by V5 or backup V2 to V1 or acting V3, and label checks on replacements. Timely replenishment rounds each deficit up separately to FRUIT10 or WATER24 whole packs, caps cumulative reserve draws at 13400 cents and retains at least 3000 cents. Include the approved announcement fallback if replenishment is unavailable.",
+    "Include the complete approved Instagram caption, flyer wording and promotional email subject and body. Retain [Venue], [RSVP link], [Accessibility contact] and [Speaker names] where used in the approved copy. All three pieces retain the step-free route as planned and pending pre-opening verification and say where verified information will be shared.",
+    "Relative Markdown links from the package resolve to both Logistics r4 files, both Budget r3 files, Marketing r4, validation-r4.json and reviewer-r4/review.json. Any section links resolve to current headings. The approval record agrees with validation passed with zero errors and review round 4 approved with no findings."
+  ],
+  "started_utc": "2026-11-25T00:03:26.889144+00:00",
+  "finished_utc": "2026-11-25T00:04:39.245639+00:00"
+}

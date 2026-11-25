@@ -1,0 +1,25 @@
+{
+  "role": "logistics",
+  "revision": 1,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md"
+  ],
+  "instructions": "Draft the logistics plan for Women in Tech: Connect & Grow, a college club event for 50 college students on February 19, 2027 from 16:00 to 19:00 local time. Read all three dependencies and write the agenda JSON and operating plan Markdown at the expected output paths. Assign volunteer duties for each activity and its transitions. Give the budget specialist a checklist with catalog SKUs and whole-pack quantities for purchases. Account for the provided venue, tables, chairs, projector, and Wi-Fi. Use clear placeholders for the venue, accessibility contact, RSVP link, and speaker names wherever referenced.",
+  "acceptance_criteria": [
+    "Both expected output files are UTF-8. The JSON is a plain object with an agenda array containing exactly six blocks, each with activity, start, end, and volunteers.",
+    "The activity IDs are welcome_checkin, icebreaker, career_panel, structured_networking, refreshment_break, and closing_activity in that order. Each block has positive duration and local HH:MM times. The schedule covers 16:00 through 19:00 with no gaps or overlaps.",
+    "Every block assigns at least one volunteer using only IDs V1 through V6. The Markdown explains each block and gives duties for each volunteer assigned to it, consistent with the JSON.",
+    "The supply checklist identifies each purchase by catalog SKU and whole-pack quantity. Pack counts cover at least 50 food servings, 50 drink servings, and 50 name tags. Planned purchases total at most 27000 cents at catalog prices, leaving room for a reserve of at least 3000 cents within the 30000-cent cap. The venue, tables, chairs, projector, and Wi-Fi are listed as provided at no charge.",
+    "The Markdown describes accessibility arrangements for entry and seating, participation in activities, and access to event information. It includes an accessibility contact placeholder.",
+    "The contingency plan covers technology failure, speaker unavailability, and volunteer absence. Each fallback gives a trigger, a specific action, and an owner identified by volunteer ID."
+  ],
+  "started_utc": "2026-11-24T23:19:06.495857+00:00",
+  "finished_utc": "2026-11-24T23:20:16.314953+00:00"
+}

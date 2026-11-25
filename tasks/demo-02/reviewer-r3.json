@@ -1,0 +1,46 @@
+{
+  "role": "reviewer",
+  "revision": 3,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md",
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md",
+    "outputs/demo-02/marketing-r3/marketing.md",
+    "reviews/demo-02/validation-r3.json",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/validation-r1.json",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md",
+    "outputs/demo-02/marketing-r2/marketing.md",
+    "reviews/demo-02/validation-r2.json",
+    "reviews/demo-02/reviewer-r2/review.json"
+  ],
+  "expected_outputs": [
+    "reviews/demo-02/reviewer-r3/review.json"
+  ],
+  "instructions": "Conduct independent QA round 3 in a separate reviewer CLI invocation under agents/reviewer.md. Read every dependency. Current specialist artifacts are outputs/demo-02/logistics-r3/logistics.json, outputs/demo-02/logistics-r3/logistics.md, outputs/demo-02/budget-r3/budget.json, outputs/demo-02/budget-r3/budget.md, outputs/demo-02/marketing-r3/marketing.md. Current machine validation is reviews/demo-02/validation-r3.json. The remaining revision artifacts, validations, and reviews are historical. Use the brief, catalog, and shared formats as requirements. Round one must identify at least one substantive, evidence-based improvement. Compare each prior finding with its original cited passages, intermediate fixes, and current files, including findings marked verified in round two. Check for regressions.\n\nFor logistics-v5-refreshment-handoff, trace stock counts, staging, both label checks, queue pause and restart, first-serving priority, seated delivery, and deficit escalation before and during service. For logistics-v1-program-handoff, trace backup duties across all six blocks from admission and check-in through closing and replenishment authority. For logistics-dual-absence-welcome-coverage, compare the r2 gap to the r3 Opening desk handoff and Budget r3 shortage step 1. Walk through both absences known before opening, either departure order during welcome before and after 16:22, and V2's return. Check continuous check-in and access coverage, explicit acceptance, and the 16:38 signal, 16:42 speaker staging, and 16:45 panel fallback. For logistics-budget-shortage-handoff-version, compare the r2 and r3 Logistics Budget handoffs with Budget r3's Review note. Follow the actual link and check whether it targets the current Budget r3 Refreshment shortage procedure. Reconcile opening coverage and V2-to-V3 shortage escalation and replenishment authority across the current files.\n\nIndependently audit the full current set even if machine validation passes. Check current handoff version references and compare the Marketing r3 step-free route claim with Logistics r3's venue verification and admission procedure. Write only the assigned review JSON. Approve only if current machine validation passes, all prior findings are resolved, at least one substantive round-one improvement is verified, and no material issue remains. Otherwise use revise and document blockers for the coordinator. Round three is final. Preserve previous files.",
+  "acceptance_criteria": [
+    "Write a UTF-8 JSON object with exactly round, verdict, summary, findings, and verified. Set round to integer 3 and verdict to approve or revise.",
+    "Account for all four prior IDs once across findings and verified. Each verified entry includes id and evidence citing specific old and current passages and explaining the concrete fix. Carry unresolved issues forward under their original IDs with current evidence.",
+    "Summarize current machine validation and independently check the six activities in brief order, continuous local coverage from 16:00 to 19:00, agreement of logistics JSON and Markdown, no more than six volunteers, accessibility measures, and contingency triggers, actions, and owners.",
+    "Recalculate catalog pack coverage and line costs, subtotal, reserve, and total. Reconcile SKUs, quantities, supply assumptions, and free provided resources across the current files. Verify at least 50 food servings, 50 drinks, and 50 name tags, reserve of at least 3000 cents, total of at most 30000 cents, and whole-pack replenishment that maintains the reserve floor.",
+    "Verify Instagram, flyer, and promotional email each stand alone with the correct event name, February 19, 2027, 16:00\u201319:00 local time, audience, six activities, supported attendee claims, and placeholders for venue, RSVP, accessibility contact, and speaker names wherever mentioned.",
+    "Each unresolved or new material finding includes a stable unique id, specialist role, evidence naming a current file and passage or omission, impact, and an actionable request. Apply all approval gates."
+  ],
+  "review_retry_instructions": "\nThis is a protocol retry of round 3. The runner rejected the previous report. Read logs/demo-02/reviewer-r3.rejected-review.json and independently reassess its findings against the unchanged artifacts. The only outstanding IDs are ['logistics-budget-shortage-handoff-version', 'logistics-dual-absence-welcome-coverage']. Account for each once, in verified with concrete old and current evidence if resolved, or in findings if unresolved. Use this saved list for ID accounting if the task's acceptance criteria list more prior IDs. Discuss earlier accepted resolutions in the summary if relevant. Report any material issues in findings and apply all approval criteria.",
+  "attempt_label": "reviewer-r3-retry4",
+  "started_utc": "2026-11-24T23:52:29.357214+00:00",
+  "finished_utc": "2026-11-24T23:53:39.199400+00:00"
+}

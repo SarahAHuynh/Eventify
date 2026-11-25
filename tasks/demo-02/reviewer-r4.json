@@ -1,0 +1,51 @@
+{
+  "role": "reviewer",
+  "revision": 4,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r4/logistics.json",
+    "outputs/demo-02/logistics-r4/logistics.md",
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md",
+    "outputs/demo-02/marketing-r4/marketing.md",
+    "reviews/demo-02/validation-r4.json",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/validation-r1.json",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md",
+    "outputs/demo-02/marketing-r2/marketing.md",
+    "reviews/demo-02/validation-r2.json",
+    "reviews/demo-02/reviewer-r2/review.json",
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md",
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md",
+    "outputs/demo-02/marketing-r3/marketing.md",
+    "reviews/demo-02/validation-r3.json",
+    "reviews/demo-02/reviewer-r3/review.json"
+  ],
+  "expected_outputs": [
+    "reviews/demo-02/reviewer-r4/review.json"
+  ],
+  "instructions": "Conduct independent QA as round 4 in a separate reviewer CLI invocation. The authorized round limit is 4. Read the shared brief, catalog, formats, and all listed evidence. The current specialist artifacts are outputs/demo-02/logistics-r4/logistics.json, outputs/demo-02/logistics-r4/logistics.md, outputs/demo-02/budget-r3/budget.json, outputs/demo-02/budget-r3/budget.md, outputs/demo-02/marketing-r4/marketing.md. The current machine report is reviews/demo-02/validation-r4.json. Use the remaining dependencies as historical evidence after the shared inputs. Budget r3 is both the current budget and part of the round-three record.\n\nStart with the round-three review and trace each outstanding finding to its original evidence. Account for each of these IDs exactly once across findings and verified: logistics-budget-shortage-handoff-version, logistics-v2-absence-entry-and-written-updates, marketing-step-free-route-unverified. Cite specific original and current files and passages for each disposition. Keep the same ID for an unresolved issue and describe the current gap, its operational impact, and an actionable correction.\n\nFor logistics-budget-shortage-handoff-version, trace the outdated references in Logistics r2 and r3. Resolve the actual Logistics r4 relative link and heading against Budget r3's Refreshment shortage procedure. Compare the desk coverage and shortage steps in both current files, including V2's direct item-level report to acting V3 when V1 and V5 are absent, authorization for timely whole-pack purchases, and the reserve limit. Follow the reciprocal Budget r3 references and distinguish historical notes and links from conflicting operational instructions by comparing their contents with Logistics r4.\n\nFor logistics-v2-absence-entry-and-written-updates, compare Logistics r3's staffing table, accessibility section and absence contingency with Logistics r4's If V2 is absent section. Walk through pre-opening and mid-welcome departures, including before and after 16:22 and overlap with V1 absence. Check who owns check-in, agendas and tags, when V6 accepts the post, and whether V4 stays on access coverage. Trace how spoken changes reach V6 and how large-print written updates reach attendees during desk coverage, after the desk transition, and when V6 also has movement duties. Check that panel and refreshment duties remain feasible.\n\nFor marketing-step-free-route-unverified, compare Instagram caption, Flyer wording and Promotional email in Marketing r3 and r4 against Logistics r4 Setup and accessibility. Check in every piece that step-free access is planned pending verification, verified information is shared through [RSVP link] and at check-in, and [Accessibility contact] remains available. Reconcile the claim with V4's route check, the verified alternative and the admission hold.\n\nRecheck previously accepted verifications and discuss concrete current evidence and regression outcomes in the summary. Cover logistics-v5-refreshment-handoff and logistics-v1-program-handoff accepted in round two and logistics-dual-absence-welcome-coverage accepted in round three. Compare the earlier accepted passages with Logistics r4 and Budget r3. Exercise pre-opening and mid-service V5 cover, label checks and queue restart, V4 seated delivery, all V1 program cues through dismissal, and the V1/V5 desk transfer before and after 16:22, return acceptance, 16:38 escalation, 16:42 speaker staging and 16:45 panel fallback. Report material regressions as findings using their original IDs where applicable.\n\nIndependently audit the full current package against the brief even if validation passes. Match the logistics JSON and Markdown on the six ordered blocks from 16:00 through 19:00 and check staffing with at most six volunteers, accessibility and contingency owners. Recompute item prices, pack coverage and totals from the catalog, reconcile purchases and shortages with Logistics r4, and audit each standalone marketing piece for event facts, placeholders, schedule, and supported promises.\n\nRound one must identify a substantive, evidence-based improvement. Confirm it from the round-one review and trace at least one such improvement through its accepted verification and the current evidence. Record any failure to establish it honestly. Approve only if current validation passes, every prior finding is resolved, at least one meaningful change is verified, and no material issue remains. Otherwise record revise at round 4 with the evidence and requested fixes. Write only reviews/demo-02/reviewer-r4/review.json as a plain JSON object with round, verdict, summary, findings, and verified. Use the field definitions in agents/reviewer.md.",
+  "acceptance_criteria": [
+    "The assigned review JSON has round 4, a verdict of approve or revise, a substantive summary, and findings and verified arrays with the required fields.",
+    "Each of logistics-budget-shortage-handoff-version, logistics-v2-absence-entry-and-written-updates, marketing-step-free-route-unverified occurs exactly once across findings and verified, with original and current file and passage evidence for its disposition.",
+    "The report checks the Budget r3 shortage anchor and V2-to-V3 escalation, the V2 absence desk and written update handoffs, and the qualified step-free language in all three marketing pieces.",
+    "The summary documents regression checks with current evidence for all three previously accepted IDs and traces at least one substantive round-one improvement. Any material regression appears as a finding.",
+    "The report reconciles the six continuous agenda blocks, staffing and contingencies, catalog pricing and pack counts, coverage of at least 50 food servings, 50 drinks and 50 tags, reserve of at least 3000 cents, total at most 30000 cents, and each marketing piece's facts and placeholders against the current evidence.",
+    "The verdict applies all approval conditions, with evidence, impact and an actionable request for every unresolved or new material finding."
+  ],
+  "started_utc": "2026-11-25T00:01:05.198483+00:00",
+  "finished_utc": "2026-11-25T00:02:48.409399+00:00"
+}

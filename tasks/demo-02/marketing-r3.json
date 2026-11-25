@@ -1,0 +1,26 @@
+{
+  "role": "marketing",
+  "revision": 3,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md",
+    "outputs/demo-02/marketing-r2/marketing.md",
+    "reviews/demo-02/reviewer-r2/review.json",
+    "reviews/demo-02/validation-r2.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/marketing-r3/marketing.md"
+  ],
+  "instructions": "Perform a dependency refresh of Marketing r2 into r3. Round 2 has no Marketing finding. Review the reviewer summary and validation, then reconcile all three pieces with the client brief and both Logistics r3 files. Carry forward the reviewed schedule, participation options, accessibility contact and refreshment copy where they match. Keep the revised staffing handoffs internal and preserve r2.",
+  "acceptance_criteria": [
+    "Provide a standalone Instagram caption, flyer wording, and promotional email with subject and body. Each has Women in Tech: Connect & Grow, Friday, February 19, 2027, 16:00\u201319:00 local time, room for 50 college students, and [Venue], [RSVP link] and [Accessibility contact].",
+    "Each piece lists all six Logistics r3 blocks in order with matching local times: welcome and check-in 16:00\u201316:25, icebreaker 16:25\u201316:45, career panel 16:45\u201317:30, structured networking 17:30\u201318:15, refreshment break 18:15\u201318:40 and closing activity 18:40\u201319:00.",
+    "Participation and accommodations described in the copy match Logistics r3. The flyer and email retain one food and one drink per attendee and use [Speaker names] for unconfirmed panelists. Public copy keeps volunteer handoffs internal."
+  ],
+  "started_utc": "2026-11-24T23:44:29.154199+00:00",
+  "finished_utc": "2026-11-24T23:44:48.651704+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "role": "reviewer",
+  "command": [
+    "opencode",
+    "run",
+    "--model",
+    "opencode/mimo-v2.6-flash-free",
+    "--format",
+    "json"
+  ],
+  "started_utc": "2026-11-24T23:28:59.215560+00:00",
+  "failure_kind": "rate_limit",
+  "ok": false,
+  "error": "OpenCode rate limit (HTTP 429). For a failed reviewer, wait for capacity or resume with another verified free model.",
+  "seconds": 4.96
+}

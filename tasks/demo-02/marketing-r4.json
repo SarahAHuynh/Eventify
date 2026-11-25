@@ -1,0 +1,27 @@
+{
+  "role": "marketing",
+  "revision": 4,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r4/logistics.json",
+    "outputs/demo-02/logistics-r4/logistics.md",
+    "outputs/demo-02/marketing-r3/marketing.md",
+    "reviews/demo-02/reviewer-r3/review.json",
+    "reviews/demo-02/validation-r3.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/marketing-r4/marketing.md"
+  ],
+  "instructions": "Use Marketing r3 as the source and preserve that file. Address the round-three review finding marketing-step-free-route-unverified, which identifies an unconditional step-free route claim in each accessibility paragraph. Round-three automated validation passed, and the review still requires this copy correction. Reconcile all three pieces against the Logistics r4 JSON agenda and the Setup and accessibility section of Logistics r4 Markdown. Describe a step-free route from arrival through entry to seating, refreshments, and the accessible restroom as planned and pending verification before doors open. Tell readers that verified route information will be shared through [RSVP link] and at check-in, and retain [Accessibility contact] for advance accommodation questions. Limit edits to this finding and any changes needed for consistency with Logistics r4. Keep volunteer handoffs internal and write the revised copy to the expected output.",
+  "acceptance_criteria": [
+    "The Instagram caption, flyer wording, and promotional email (subject and body) each explicitly describe the full step-free route as planned and pending verification before doors open. None presents the route as already verified or guaranteed.",
+    "Each piece says verified route information will be shared through [RSVP link] and at check-in and retains [Accessibility contact] for advance accommodation questions.",
+    "Each piece stands alone with Women in Tech: Connect & Grow, Friday, February 19, 2027, 16:00\u201319:00 local time, room for 50 college students, [Venue], [RSVP link], and all six activities in the order and time slots in Logistics r4.",
+    "Preserve the r3 participation options and agenda-format details consistent with Logistics r4, and retain [Speaker names] and one food and one drink per attendee in the flyer and email. Keep internal staffing details out of the public copy and limit the diff to the route finding and necessary consistency edits."
+  ],
+  "started_utc": "2026-11-24T23:59:31.925054+00:00",
+  "finished_utc": "2026-11-25T00:00:08.962171+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "role": "reviewer",
+  "command": [
+    "opencode",
+    "run",
+    "--model",
+    "opencode/deepseek-v4.1-flash-free",
+    "--format",
+    "json"
+  ],
+  "started_utc": "2026-11-24T23:22:40.994130+00:00",
+  "ok": false,
+  "error": "opencode exited 1.",
+  "seconds": 2.58
+}

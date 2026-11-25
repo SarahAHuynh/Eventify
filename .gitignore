@@ -1,0 +1,48 @@
+# Local credentials and machine state
+.env
+.env.*
+.netrc
+.aws/
+.codex/
+.agents/
+.ssh/
+*.pem
+*.key
+
+# Generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.swp
+*.tmp
+*.log
+resume.lock
+
+# Keep the completed experiment artifacts and selected execution records.
+/tasks/*/
+!/tasks/demo-02/
+/outputs/*/
+!/outputs/demo-02/
+/reviews/*/
+!/reviews/demo-02/
+/logs/*/
+!/logs/demo-02/
+/logs/demo-02/*
+!/logs/demo-02/*.result.json
+!/logs/demo-02/assign-*.prompt.md
+!/logs/demo-02/review-checkpoint*.json
+!/logs/demo-02/*.rejected-review.json
+!/logs/demo-02/reviewer-tool-change.md
+!/logs/demo-02/run.public.json
+
+# Keep only the completed baseline's inputs, outputs, and structured results.
+/baseline/runs/*/
+!/baseline/runs/baseline-01/
+/baseline/runs/baseline-01/*
+!/baseline/runs/baseline-01/deliverables/
+!/baseline/runs/baseline-01/inputs/
+!/baseline/runs/baseline-01/result.json
+!/baseline/runs/baseline-01/logs/
+/baseline/runs/baseline-01/logs/*
+!/baseline/runs/baseline-01/logs/single.result.json

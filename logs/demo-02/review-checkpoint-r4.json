@@ -1,0 +1,31 @@
+{
+  "round": 4,
+  "pending": {
+    "logistics-budget-shortage-handoff-version": "logistics",
+    "marketing-step-free-route-unverified": "marketing",
+    "logistics-v2-absence-entry-and-written-updates": "logistics"
+  },
+  "history": [
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/validation-r1.json",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md",
+    "outputs/demo-02/marketing-r2/marketing.md",
+    "reviews/demo-02/validation-r2.json",
+    "reviews/demo-02/reviewer-r2/review.json",
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md",
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md",
+    "outputs/demo-02/marketing-r3/marketing.md",
+    "reviews/demo-02/validation-r3.json",
+    "reviews/demo-02/reviewer-r3/review.json"
+  ]
+}

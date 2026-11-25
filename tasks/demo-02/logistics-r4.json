@@ -1,0 +1,31 @@
+{
+  "role": "logistics",
+  "revision": 4,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md",
+    "reviews/demo-02/reviewer-r3/review.json",
+    "reviews/demo-02/validation-r3.json",
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/logistics-r4/logistics.json",
+    "outputs/demo-02/logistics-r4/logistics.md"
+  ],
+  "instructions": "Read all dependencies. Use outputs/demo-02/logistics-r3/logistics.md as the baseline for the r4 Markdown. Address the reviewer findings logistics-budget-shortage-handoff-version and logistics-v2-absence-entry-and-written-updates. Limit Markdown edits to those findings and directly necessary consistency updates. Copy the r3 logistics.json bytes directly to the r4 path. Retain all earlier files. In the Budget handoff, name Budget r3 and point to ../budget-r3/budget.md#refreshment-shortage-procedure. Check the target against steps 1\u20133 of the retained Budget r3 Markdown, which already reflects the verified opening desk coverage and shortage escalation. Keep that procedure and the verified Logistics r3 opening desk handoff intact. For a V2 absence, use V6 as the desk backup and written schedule update owner. When V1 is present, V1 retains desk ownership until V6 explicitly accepts in person, by 16:22 before V1 starts the welcome, or immediately if V2 leaves after taking the desk. If V2 is absent at opening, give V1 access to the agendas and self-service tags and markers from first arrivals. If V1 and V2 are both absent at opening, have acting lead V3 assign V6 and obtain readiness confirmation before first arrivals. If their absences overlap during welcome, have V3 coordinate immediate desk coverage by V6. At the desk V6 handles check-in, agendas, tags and seat directions, and posts or distributes written schedule changes there. Specify how V6 will continue to make written updates available after leaving the desk, coordinating timing with the volunteer giving the spoken cue. Resolve any conflicting V6 duties during the desk assignment using existing volunteers and the existing schedule. Keep V4 on accessibility coverage. Retain the existing panel question and combined refreshment station fallbacks for a V2 absence.",
+  "acceptance_criteria": [
+    "A byte comparison of the r3 and r4 logistics.json files succeeds. The Markdown retains the six scheduled blocks and times from 16:00 to 19:00, the regular volunteer assignments, and all six SKU quantities: SNACK10 3, FRUIT10 3, WATER24 3, TAG25 3, MARKER4 2, and PRINT25 3.",
+    "The Budget handoff label identifies Budget r3, and the link resolves to the Refreshment shortage procedure heading in the retained Budget r3 Markdown. The procedure and Logistics handoff agree on immediate item-level reporting after the recount, direct reporting from V2 to acting lead V3 when V1 and V5 are absent, and V1 or acting V3 authorizing timely whole-pack replenishment with a 13400-cent cumulative draw limit and at least 3000 cents remaining.",
+    "The reviewer-verified V1/V5 opening desk coverage remains intact, including first arrivals, the in-person mid-welcome transfer and return to V2, and the 16:38, 16:42, and 16:45 speaker and panel fallback.",
+    "For a V2 absence, the Markdown explicitly assigns V6 check-in, agenda distribution, and tag and marker access, and gives the timing and acknowledgment for takeover at 16:22 or when V2 leaves during welcome. It also assigns desk coverage from first arrivals and gives an immediate handoff when V1 and V2 absences overlap.",
+    "The Markdown assigns V6 written schedule updates during V2's absence, specifies where attendees can obtain updates during and after desk coverage, and keeps V4 on access duties throughout. Any concurrent V6 duties are sequenced or reassigned without changing block times.",
+    "The Markdown diff is limited to the two logistics findings and their necessary consistency edits. Earlier revisions and all review, Budget, and Marketing files remain intact."
+  ],
+  "started_utc": "2026-11-24T23:58:02.687131+00:00",
+  "finished_utc": "2026-11-24T23:58:59.293384+00:00"
+}

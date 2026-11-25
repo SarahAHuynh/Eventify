@@ -1,0 +1,13 @@
+{
+  "items": [
+    {"sku": "SNACK10", "quantity": 3, "unit_cents": 1400, "total_cents": 4200},
+    {"sku": "FRUIT10", "quantity": 3, "unit_cents": 1000, "total_cents": 3000},
+    {"sku": "WATER24", "quantity": 3, "unit_cents": 800, "total_cents": 2400},
+    {"sku": "TAG25", "quantity": 3, "unit_cents": 450, "total_cents": 1350},
+    {"sku": "MARKER4", "quantity": 2, "unit_cents": 350, "total_cents": 700},
+    {"sku": "PRINT25", "quantity": 3, "unit_cents": 650, "total_cents": 1950}
+  ],
+  "subtotal_cents": 13600,
+  "reserve_cents": 16400,
+  "total_cents": 30000
+}

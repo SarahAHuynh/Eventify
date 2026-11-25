@@ -1,0 +1,15 @@
+{
+  "role": "coordinator",
+  "command": [
+    "codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--json",
+    "--color",
+    "never"
+  ],
+  "started_utc": "2026-11-25T00:03:26.891495+00:00",
+  "ok": true,
+  "seconds": 72.35
+}

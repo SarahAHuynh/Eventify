@@ -1,0 +1,25 @@
+{
+  "role": "marketing",
+  "revision": 1,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/marketing-r1/marketing.md"
+  ],
+  "instructions": "Read all dependencies and independently draft student-friendly, channel-specific copy based on the client brief and logistics r1. Use the logistics agenda for the attendee experience and the accessibility plan for the accommodation invitation. Write the assigned file for coordinator and QA handoff.",
+  "acceptance_criteria": [
+    "The UTF-8 Markdown contains three standalone sections titled Instagram caption, Flyer wording, and Promotional email. The email includes a subject and body.",
+    "Each piece states the exact name Women in Tech: Connect & Grow, the college student audience, February 19, 2027, and 16:00\u201319:00 local time.",
+    "Each piece mentions all six planned activities in agenda order: welcome and check-in, icebreaker, career panel, structured networking, refreshment break, and closing activity. Any additional activity details or times agree with logistics r1.",
+    "Each piece includes [Venue], an actionable RSVP call using [RSVP link], and a plain-language accommodation invitation using [Accessibility contact].",
+    "The copy presents the career panel as planned and uses [Speaker names] if names are referenced. It makes no invented speaker claims or unsupported accessibility, dietary, or participation guarantees."
+  ],
+  "started_utc": "2026-11-24T23:21:12.478259+00:00",
+  "finished_utc": "2026-11-24T23:22:09.463379+00:00"
+}

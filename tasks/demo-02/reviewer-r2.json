@@ -1,0 +1,37 @@
+{
+  "role": "reviewer",
+  "revision": 2,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md",
+    "outputs/demo-02/marketing-r2/marketing.md",
+    "reviews/demo-02/validation-r2.json",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/validation-r1.json",
+    "reviews/demo-02/reviewer-r1/review.json"
+  ],
+  "expected_outputs": [
+    "reviews/demo-02/reviewer-r2/review.json"
+  ],
+  "instructions": "Conduct independent QA round 2 in a separate reviewer CLI invocation under agents/reviewer.md. Read all dependencies. The five current specialist artifacts are outputs/demo-02/logistics-r2/logistics.json, outputs/demo-02/logistics-r2/logistics.md, outputs/demo-02/budget-r2/budget.json, outputs/demo-02/budget-r2/budget.md, outputs/demo-02/marketing-r2/marketing.md. Current machine validation is reviews/demo-02/validation-r2.json. Use the brief, catalog and formats as requirements. Use the round-one artifacts, validation and review as historical evidence. Round one must identify at least one substantive, evidence-based improvement. Verify each prior finding by comparing the cited old passages with the current files. For logistics-v5-refreshment-handoff, compare the original absence and shortage rows and budget operating assumptions to the revised V5 absence schedule and budget shortage procedure. Walk through pre-opening absence, departure before release and departure during service. Check stock counts, staging, food and drink labels, queue pause and restart, first-serving priority, seated service and escalation. For logistics-v1-program-handoff, compare the original staffing table and absence row to the revised V1 absence schedule. Trace backup duties across all six blocks, including check-in through 16:22, speaker reception and briefing, icebreaker cues, replenishment authority and closing recap. Test simultaneous V1 and V5 absences for overlapping opening and service duties and verify the V2-to-V3 shortage escalation. Reconcile current logistics with Budget r2 and check the logistics handoff reference to Budget revision 1. Check Marketing r2 against current logistics and budget. Assess materiality independently even if machine validation passes. Write only the assigned review JSON. Approve only if current machine validation passes, every prior finding is resolved, at least one meaningful change has been verified, and no material issue remains. Use at most three QA rounds total.",
+  "acceptance_criteria": [
+    "Write a UTF-8 JSON object with exactly round, verdict, summary, findings and verified. Set round to integer 2 and verdict to revise or approve.",
+    "Account for both prior finding IDs. Each resolved finding has a verified entry with id and evidence citing specific passages in both old and current files and describing the operational change. Each unresolved finding retains its original ID and identifies the remaining gap.",
+    "Summarize current validation and independently check all six activities in brief order with continuous 16:00\u201319:00 local coverage, agreement between logistics JSON and Markdown, at most six volunteers, accessibility arrangements and contingency triggers, actions and owners.",
+    "Recompute catalog pack coverage, line costs, subtotal, reserve and total. Reconcile unique SKUs, counts and supply assumptions with current logistics. Check at least 50 food servings, 50 drink servings and 50 name tags, at least 3000 cents of reserve and a total of at most 30000 cents. Verify shortage ownership, whole-pack rounding, catalog costs and the minimum reserve after replenishment.",
+    "Verify that the Instagram caption, flyer and promotional email each stand alone and match the brief and current logistics on event name, February 19, 2027, 16:00\u201319:00 local time, audience, all six activities and supported attendee promises. Check placeholders for venue, RSVP, accessibility contact and any speaker names mentioned.",
+    "Each unresolved or new material finding has a stable unique id, a specialist role, evidence naming a current file and passage or omission, impact and an actionable request. Apply all approval gates and keep the run unapproved if no substantive round-one improvement can be verified."
+  ],
+  "started_utc": "2026-11-24T23:40:12.323308+00:00",
+  "finished_utc": "2026-11-24T23:41:24.601758+00:00"
+}

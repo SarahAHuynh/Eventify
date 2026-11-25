@@ -1,0 +1,26 @@
+{
+  "role": "budget",
+  "revision": 1,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md"
+  ],
+  "instructions": "Read all dependencies and independently price the logistics r1 supply plan for 50 students. Verify the Supplies for Budget table against the catalog, including the accessibility print allocation and conditional refreshment replenishment. Explain discrepancies and proposed substitutions, including what logistics would need to reconcile. Write the two assigned files for coordinator and QA handoff.",
+  "acceptance_criteria": [
+    "Both files follow the UTF-8 budget formats in inputs/output_formats.md. Budget JSON lists each purchased catalog SKU once, with positive whole-pack quantities and exact catalog prices in integer cents.",
+    "Reconcile the six planned purchases with logistics r1: 3 SNACK10, 3 FRUIT10, 3 WATER24, 3 TAG25, 2 MARKER4, and 3 PRINT25. Explain the use of 8 markers and the allocation of 75 large-print copies (50 attendee agendas and 25 signs or backups). Document any proposed substitution and its cost and operational effect.",
+    "Show pack-based coverage of at least 50 food servings, 50 drink servings, and 50 name tags. The planned quantities yield 60 food servings, 72 drinks, and 75 tags.",
+    "Show that each line total equals packs times catalog price, subtotal equals the sum of line totals, and total equals subtotal plus reserve. Verify the planned 13600-cent subtotal, 16400-cent reserve, and 30000-cent total. Keep the reserve at or above 3000 cents and the total at or below 30000 cents.",
+    "The Markdown lists the free venue, tables, chairs, projector, and Wi-Fi. Explain that shortage replenishment with whole packs of FRUIT10 or WATER24 depends on feasible delivery and is funded from the reserve."
+  ],
+  "started_utc": "2026-11-24T23:21:12.478279+00:00",
+  "finished_utc": "2026-11-24T23:21:59.302143+00:00"
+}

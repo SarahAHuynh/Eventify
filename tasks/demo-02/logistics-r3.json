@@ -1,0 +1,29 @@
+{
+  "role": "logistics",
+  "revision": 3,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "reviews/demo-02/reviewer-r2/review.json",
+    "reviews/demo-02/validation-r2.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md"
+  ],
+  "instructions": "Use Logistics r2 as the baseline and write complete r3 versions at the assigned paths. Preserve prior files. Round 2 automated validation passed, and the reviewer requested two operational fixes. For logistics-dual-absence-welcome-coverage, reconcile the V5 departure-before-service row, the V1 welcome and icebreaker rows, and the combined-absence paragraph in outputs/demo-02/logistics-r2/logistics.md. Cover both absences known before opening and overlapping absences after doors open but before 16:22, including V5 leaving while V1 is already absent. Whenever V2 must leave check-in for stock work, name the replacement, specify the transfer signal and return handoff, and cover check-in, agendas, and access to tags. Alternatively, explicitly defer V2's stock work to a named time and keep V2 at check-in until relieved. Assign a speaker briefing and staging backup if V6 is still occupied with arrivals, and sequence that duty around icebreaker coverage. For logistics-budget-shortage-handoff-version, consult outputs/demo-02/budget-r2/budget.md, Refreshment shortage procedure, steps 1\u20134. Replace the Budget r1 reference in the operational handoff with the explicit Budget r2 section reference and align the shortage row and backup schedules with it. Record the revised opening handoff for Budget to reconcile against its current opening coverage note. Preserve the reviewed agenda, supply quantities, accessibility provisions, and other contingency coverage, and carry forward the Marketing handoff.",
+  "acceptance_criteria": [
+    "Both r3 files are complete and agree on the six required activity IDs, continuous 16:00\u201319:00 local schedule, and normal block staffing using only V1\u2013V6.",
+    "For dual absence before doors open and for overlap after doors open but before 16:22, the written schedule identifies an active check-in owner at every handoff, including agenda distribution and tag access. It specifies who signals and accepts a transfer and when coverage returns, or gives a named time for deferred stock work and continuous V2 coverage until relief.",
+    "If V6 remains on arrivals into the icebreaker, a named volunteer briefs speakers and stages them by 16:42. The plan assigns the 16:42 icebreaker wrap-up and sequences duties so no volunteer has to cover two posts at once.",
+    "The Budget handoff names outputs/demo-02/budget-r2/budget.md and its Refreshment shortage procedure. The shortage instructions consistently assign V5, or V2 when V5 is absent, to count, release usable surplus, recount, prioritize outstanding first servings including seated requests, and report the remaining item-level deficit immediately to V1 or acting lead V3. When both V1 and V5 are absent, V2 reports directly to V3, who decides on replenishment.",
+    "The supply and shortage sections retain 60 food servings, 72 drinks, 75 tags, 13600 cents in planned purchases, and a 16400-cent starting reserve. Replenishment uses whole FRUIT10 or WATER24 packs as applicable when available in time, with a cumulative draw of at most 13400 cents and at least 3000 cents remaining in reserve.",
+    "The plan retains the verified single-absence handoffs, step-free route and seating checks, accommodation contact placeholder, participation options, food and drink labeling, and owned responses for AV or Wi-Fi failure and speaker cancellation. The Budget handoff identifies the updated opening coverage for reconciliation."
+  ],
+  "started_utc": "2026-11-24T23:42:07.025955+00:00",
+  "finished_utc": "2026-11-24T23:43:20.781199+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "role": "reviewer",
+  "revision": 1,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/validation-r1.json"
+  ],
+  "expected_outputs": [
+    "reviews/demo-02/reviewer-r1/review.json"
+  ],
+  "instructions": "Conduct independent QA round 1 under agents/reviewer.md. Read every dependency. Use the five specialist files listed in dependencies as the current versions and validation-r1.json as the current machine validation. Treat any earlier reviews and artifacts supplied as historical evidence. Independently check the brief, catalog and shared formats even though machine validation passed. Compare the two logistics files, the two budget files, and each promotional section against current logistics. Trace volunteer duties and handoffs through normal operation and contingencies. In particular, test whether the staffing fallback covers refreshment staging, labeling and shortage response if V5 is absent, using the volunteer table and contingency rows in logistics.md and the assumptions in budget.md. Assess that lead independently and report only findings supported by the files. Identify at least one substantive, evidence-based improvement in round 1. If none can be substantiated, say so honestly and leave the run unapproved. For any prior finding, compare the cited old artifact with the current artifact, record the concrete change for resolved findings, and carry unresolved findings forward under their original IDs. Use an empty verified array if no prior findings exist. Write only the assigned review JSON. Use at most three QA rounds total. Approve only if current machine validation passes, every prior finding is resolved, at least one meaningful change has been verified, and no material issue remains.",
+  "acceptance_criteria": [
+    "The assigned output is a valid UTF-8 JSON object with exactly round, verdict, summary, findings and verified. Round is the integer 1 and verdict is revise or approve.",
+    "The summary reports the validation result and independent checks of six activities in brief order with continuous 16:00\u201319:00 coverage, JSON and Markdown staffing agreement with at most six volunteers, accessibility arrangements, and contingency triggers, actions and owners.",
+    "The review recalculates catalog pack coverage, line totals, subtotal, reserve and grand total. It verifies at least 50 food servings, 50 drinks and 50 name tags, a reserve of at least 3000 cents and a total of at most 30000 cents. It reconciles SKU quantities and supply assumptions against current logistics.",
+    "The review checks that the Instagram caption, flyer and email each stand alone and agree with the brief and current logistics on event identity, date, local hours, audience, activities, accessibility contact and placeholders for relevant unconfirmed details.",
+    "Round 1 includes at least one substantive, evidence-based improvement. Each finding has a stable unique id, a specialist role, evidence naming the current file and passage or omission, an operational impact and an actionable request. If no meaningful improvement can be supported, the report documents that outcome honestly and leaves the verdict at revise.",
+    "Each verified entry has an id and evidence citing both old and current files and describing the resolving change. Unresolved prior findings keep their original IDs. The verdict follows the approval conditions in the instructions."
+  ],
+  "attempt_label": "reviewer-r1-retry3",
+  "started_utc": "2026-11-24T23:34:00.392397+00:00",
+  "finished_utc": "2026-11-24T23:35:16.118868+00:00"
+}

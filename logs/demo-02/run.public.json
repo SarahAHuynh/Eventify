@@ -1,0 +1,68 @@
+{
+  "run": "demo-02",
+  "started_utc": "2026-11-24T23:18:22.907430+00:00",
+  "opencode_model": "opencode/mimo-v2.6-flash-free",
+  "panes": {
+    "logistics": "w6:p2",
+    "budget": "w6:p3",
+    "marketing": "w6:p4",
+    "reviewer": "w6:p5"
+  },
+  "resumes": [
+    {
+      "started_utc": "2026-11-24T23:28:59.148904+00:00",
+      "previous_model": "opencode/deepseek-v4.1-flash-free",
+      "model": "opencode/mimo-v2.6-flash-free",
+      "previous_attempt": "reviewer-r1",
+      "previous_error": "reviewer-r1: opencode exited 1. See logs/demo-02.",
+      "previous_failure_kind": "rate_limit",
+      "attempt": "reviewer-r1-retry1"
+    },
+    {
+      "started_utc": "2026-11-24T23:30:35.891723+00:00",
+      "previous_model": "opencode/mimo-v2.6-flash-free",
+      "model": "opencode/mimo-v2.6-flash-free",
+      "previous_attempt": "reviewer-r1-retry1",
+      "previous_error": "reviewer-r1-retry1: OpenCode rate limit (HTTP 429). For a failed reviewer, wait for capacity or resume with another verified free model. See logs/demo-02.",
+      "previous_failure_kind": "rate_limit",
+      "attempt": "reviewer-r1-retry2"
+    },
+    {
+      "started_utc": "2026-11-24T23:34:00.190930+00:00",
+      "previous_reviewer_tool": "opencode",
+      "reviewer_tool": "codex",
+      "previous_model": "opencode/mimo-v2.6-flash-free",
+      "model": null,
+      "previous_attempt": "reviewer-r1-retry2",
+      "previous_error": "reviewer-r1-retry2: OpenCode rate limit (HTTP 429). For a failed reviewer, wait for capacity or resume with another verified free model. See logs/demo-02.",
+      "previous_failure_kind": "rate_limit",
+      "attempt": "reviewer-r1-retry3"
+    },
+    {
+      "started_utc": "2026-11-24T23:52:28.544044+00:00",
+      "previous_reviewer_tool": "codex",
+      "reviewer_tool": "codex",
+      "previous_model": null,
+      "model": null,
+      "previous_attempt": "reviewer-r3",
+      "previous_error": "Verification ID 'logistics-v5-refreshment-handoff' is not outstanding in round 3.",
+      "previous_failure_kind": "review_protocol",
+      "attempt": "reviewer-r3-retry4"
+    }
+  ],
+  "reviewer_tool": "codex",
+  "round_four_authorization": {
+    "started_utc": "2026-11-24T23:57:26.690270+00:00",
+    "previous_error": "Review limit reached with open findings ['logistics-budget-shortage-handoff-version', 'logistics-v2-absence-entry-and-written-updates', 'marketing-step-free-route-unverified']. See reviews/demo-02/reviewer-r3/review.json and reviews/demo-02/validation-r3.json.",
+    "findings": {
+      "logistics-budget-shortage-handoff-version": "logistics",
+      "marketing-step-free-route-unverified": "marketing",
+      "logistics-v2-absence-entry-and-written-updates": "logistics"
+    },
+    "reviewer_tool": "codex"
+  },
+  "status": "approved",
+  "package": "outputs/demo-02/coordinator-r1/event_package.md",
+  "review_rounds": 4,
+  "seconds": 432.56
+}

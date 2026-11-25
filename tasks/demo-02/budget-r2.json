@@ -1,0 +1,29 @@
+{
+  "role": "budget",
+  "revision": 2,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/budget-r1/budget.json",
+    "outputs/demo-02/budget-r1/budget.md",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "reviews/demo-02/validation-r1.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md"
+  ],
+  "instructions": "Use the revision 1 budget JSON and Markdown as the baseline and preserve both files. The round 1 reviewer finding logistics-v5-refreshment-handoff cites the shortage assumption in budget-r1/budget.md and explicitly requests budget alignment. Update the shortage procedure using Logistics r2's Contingencies, If V5 is absent, Budget handoff, and If V1 is absent sections. Account for the V3 replenishment decision when V1 is absent, including when both V1 and V5 are absent. Reconcile the itemization, print allocation, coverage, and reserve against the current logistics supply table and catalog. Carry forward the matching purchase quantities and totals, and preserve the printing assumptions as items to confirm. Write both revision 2 budget files at the assigned paths.",
+  "acceptance_criteria": [
+    "Budget JSON and Markdown agree with the catalog and Logistics r2 on six unique SKU quantities: SNACK10 \u00d7 3, FRUIT10 \u00d7 3, WATER24 \u00d7 3, TAG25 \u00d7 3, MARKER4 \u00d7 2, and PRINT25 \u00d7 3. Each line equals quantity times catalog unit price.",
+    "Both files show 13600 cents in purchases, 16400 cents in reserve, and 30000 cents total. Markdown accounts for 60 food servings, 72 drinks, 75 name tags, eight shared markers, and 75 print copies split into 50 attendee agendas and 25 signs or backups. Provided venue and equipment are recorded as free in the notes.",
+    "The shortage procedure names V5 as primary and V2 as backup for counting usable stock, releasing up to the planned surplus of 10 food and 22 drinks as needed, recounting, prioritizing outstanding first servings including V4's seated service, and escalating remaining deficits by item to V1 or V3 if V1 is absent.",
+    "The procedure assigns the replenishment decision to V1 or V3 if V1 is absent, specifies rounding remaining deficits up to whole FRUIT10 or WATER24 packs at 1000 or 800 cents respectively when timely delivery is feasible, and limits reserve draw to 13400 cents so at least 3000 cents remains. It covers replacement label checks and the announcement of shortages and any venue-confirmed drinking-water option when replenishment is unavailable."
+  ],
+  "started_utc": "2026-11-24T23:38:01.663295+00:00",
+  "finished_utc": "2026-11-24T23:38:36.155801+00:00"
+}

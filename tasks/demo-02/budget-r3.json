@@ -1,0 +1,31 @@
+{
+  "role": "budget",
+  "revision": 3,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r3/logistics.json",
+    "outputs/demo-02/logistics-r3/logistics.md",
+    "outputs/demo-02/budget-r2/budget.json",
+    "outputs/demo-02/budget-r2/budget.md",
+    "reviews/demo-02/reviewer-r2/review.json",
+    "reviews/demo-02/validation-r2.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/budget-r3/budget.json",
+    "outputs/demo-02/budget-r3/budget.md"
+  ],
+  "instructions": "Refresh Budget r2 into r3 using both Logistics r3 files. Round 2 assigns both findings to Logistics. Reconcile their budget-facing effects: for logistics-dual-absence-welcome-coverage, update Budget r2 shortage step 1 using Logistics r3\u2019s Opening desk handoff when V5 is absent. For logistics-budget-shortage-handoff-version, reconcile Budget r2 shortage steps 1\u20134 with Logistics r3\u2019s Contingencies and Budget handoff, including V2\u2019s direct escalation to V3. Update all Logistics r2 references, including in the substitution note. Verify the supply table and calculations against the fictional catalog. Preserve r2 and keep the substitution conditional.",
+  "acceptance_criteria": [
+    "Both outputs use the Logistics r3 supply quantities and catalog prices: SNACK10 \u00d7 3, FRUIT10 \u00d7 3, WATER24 \u00d7 3, TAG25 \u00d7 3, MARKER4 \u00d7 2 and PRINT25 \u00d7 3. Coverage is 60 food servings, 72 drinks, 75 tags, eight markers and 75 large-print copies (50 attendee agendas plus 25 signs or backups). Document the free venue and equipment and the double-sided and mixed-use print assumptions.",
+    "Each unique SKU line equals whole packs times catalog unit cents. Subtotal is 13600 cents, reserve is 16400 cents, and total is 30000 cents.",
+    "The opening note covers both pre-opening and mid-welcome overlaps. V6 owns check-in, agendas and self-service tags and markers while V2 handles stock. V2 stays at the desk until V6 accepts in person if V2 is covering it. V6 takes over immediately if V1 departs while V2 is already doing stock work. V2 explicitly accepts the desk back after stock work and any immediate deficit report.",
+    "The shortage procedure retains V5 or backup V2 for stock counts, staging and label checks, including the queue pause and combined station if V5 departs during service. Release usable held surplus, recount, hold seconds and prioritize outstanding first servings including seated requests. Report remaining deficits immediately by item to V1 or acting lead V3. During a dual absence V2 reports directly to V3.",
+    "V1 or acting lead V3 authorizes replenishment if it can arrive in time. Round deficits separately to whole FRUIT10 and WATER24 packs at 1000 and 800 cents respectively. Explain the 13400-cent cumulative draw limit, 3000-cent minimum remaining reserve, replacement label checks and shortage announcement fallback.",
+    "Budget Markdown references Logistics r3 throughout. The optional one-pack snack-to-fruit substitution stays outside planned totals and, if adopted after logistics coordination, preserves 60 food servings with a 13200-cent subtotal and 16800-cent reserve."
+  ],
+  "started_utc": "2026-11-24T23:44:29.154163+00:00",
+  "finished_utc": "2026-11-24T23:45:40.972289+00:00"
+}

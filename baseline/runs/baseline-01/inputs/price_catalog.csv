@@ -1,0 +1,10 @@
+sku,item,category,unit_cents,units_per_pack
+SNACK10,Individually wrapped snack variety pack,food,1400,10
+FRUIT10,Whole fruit pack,food,1000,10
+WATER24,Bottled water case,drink,800,24
+JUICE12,Juice carton pack,drink,1100,12
+TAG25,Peel-and-stick name tags,name_tags,450,25
+MARKER4,Marker set,supplies,350,4
+PRINT25,Large-print handout batch,accessibility,650,25
+CUP50,Paper cup pack,supplies,500,50
+TAPE1,Floor marking tape roll,supplies,700,1

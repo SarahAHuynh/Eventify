@@ -1,0 +1,10 @@
+{
+  "agenda": [
+    {"activity": "welcome_checkin", "start": "16:00", "end": "16:25", "volunteers": ["V1", "V2", "V3", "V4", "V5", "V6"]},
+    {"activity": "icebreaker", "start": "16:25", "end": "16:45", "volunteers": ["V1", "V2", "V3", "V4", "V5", "V6"]},
+    {"activity": "career_panel", "start": "16:45", "end": "17:30", "volunteers": ["V1", "V2", "V3", "V4", "V5", "V6"]},
+    {"activity": "structured_networking", "start": "17:30", "end": "18:15", "volunteers": ["V1", "V2", "V3", "V4", "V5", "V6"]},
+    {"activity": "refreshment_break", "start": "18:15", "end": "18:40", "volunteers": ["V1", "V2", "V3", "V4", "V5", "V6"]},
+    {"activity": "closing_activity", "start": "18:40", "end": "19:00", "volunteers": ["V1", "V2", "V3", "V4", "V5", "V6"]}
+  ]
+}

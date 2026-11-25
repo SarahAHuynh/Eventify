@@ -1,0 +1,15 @@
+{
+  "role": "reviewer",
+  "command": [
+    "codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--json",
+    "--color",
+    "never"
+  ],
+  "started_utc": "2026-11-24T23:34:00.392918+00:00",
+  "ok": true,
+  "seconds": 75.73
+}

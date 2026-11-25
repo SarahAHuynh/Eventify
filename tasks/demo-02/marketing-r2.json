@@ -1,0 +1,27 @@
+{
+  "role": "marketing",
+  "revision": 2,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md",
+    "outputs/demo-02/marketing-r1/marketing.md",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "reviews/demo-02/validation-r1.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/marketing-r2/marketing.md"
+  ],
+  "instructions": "Complete a dependency refresh. Round 1 QA logged no marketing findings and confirmed the three pieces stand alone. Read revision 1 marketing and both Logistics r2 files, including the Marketing handoff, then verify each public claim against the current plan. Carry forward matching copy, including the published schedule and participation options, and update any discrepancies. Keep volunteer coverage and absence handoffs internal. Preserve revision 1 and save the reconciled copy at the assigned revision 2 path.",
+  "acceptance_criteria": [
+    "The Markdown has an Instagram caption, flyer wording, and promotional email with a subject and body. Each independently states Women in Tech: Connect & Grow, Friday, February 19, 2027, 16:00\u201319:00 local time, and capacity for 50 college students.",
+    "Each piece lists all six public activities in the current order and time slots: welcome and check-in 16:00\u201316:25, icebreaker 16:25\u201316:45, career panel 16:45\u201317:30, structured networking 17:30\u201318:15, refreshment break 18:15\u201318:40, and closing activity 18:40\u201319:00.",
+    "Each piece retains [Venue], [RSVP link], and [Accessibility contact]. Speaker names remain unconfirmed, and any speaker-name reference uses [Speaker names].",
+    "Any descriptions of participation and service match Logistics r2, including optional written or listening participation where offered, optional contact exchange, and one food and one drink serving per attendee where refreshments are described. Public copy contains no internal staffing handoffs."
+  ],
+  "started_utc": "2026-11-24T23:38:01.668144+00:00",
+  "finished_utc": "2026-11-24T23:39:07.823576+00:00"
+}

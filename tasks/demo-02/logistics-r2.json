@@ -1,0 +1,28 @@
+{
+  "role": "logistics",
+  "revision": 2,
+  "status": "completed",
+  "dependencies": [
+    "inputs/client_request.md",
+    "inputs/price_catalog.csv",
+    "inputs/output_formats.md",
+    "outputs/demo-02/logistics-r1/logistics.json",
+    "outputs/demo-02/logistics-r1/logistics.md",
+    "reviews/demo-02/reviewer-r1/review.json",
+    "reviews/demo-02/validation-r1.json"
+  ],
+  "expected_outputs": [
+    "outputs/demo-02/logistics-r2/logistics.json",
+    "outputs/demo-02/logistics-r2/logistics.md"
+  ],
+  "instructions": "Use the revision 1 logistics JSON and Markdown as the baseline and preserve both files. Resolve the two findings in reviews/demo-02/reviewer-r1/review.json, even though validation-r1.json passed. For logistics-v5-refreshment-handoff, revise the volunteer absence and shortage rows, the setup and accessibility food-labeling instructions, and the staffing table or accompanying handoff notes as needed. Cover both a missed pre-opening check and a mid-event departure. Assign available owners and timing for counting and staging usable stock, labeling food and checking drink labels before release, and managing shortages through surplus release, first-serving prioritization, and escalation to V1 for replenishment. Preserve the combined station and seated service. Document the replacement stock-count and escalation ownership as a handoff for budget to reconcile with its revision 1 shortage assumptions. For logistics-v1-program-handoff, use the volunteer assignments table and volunteer absence row to identify and cover V1\u2019s duties in every affected block, including opening check-in through 16:22, welcome, icebreaker, and closing reflection and recap. Keep absence coordination and transition cues covered and explain how backups hand off or consolidate overlapping duties, especially speaker reception and optional closing sharing if V3 is involved. Write both revision 2 files and carry forward the reviewed agenda, supplies, accessibility arrangements, and other fallbacks. Keep the JSON and Markdown aligned and flag any changes affecting budget or marketing for reconciliation against revision 2.",
+  "acceptance_criteria": [
+    "For a V5 absence at the pre-opening check or mid-event, the plan identifies a volunteer and when they take over usable stock count and staging, food labeling, drink-label verification before release, and each shortage step from surplus release through prioritizing first servings and escalating any remaining deficit to V1.",
+    "The V5 handoff specifies how backups make time around their existing duties, who staffs the combined station, and who provides seated service. The budget handoff states who counts stock, releases surplus, and reports the remaining deficit to V1.",
+    "For a V1 absence at opening or mid-event, each affected block identifies who covers V1\u2019s essential duties, including check-in through 16:22, welcome, icebreaker, transition cues, closing reflection, and recap. The plan names the absence coordinator and resolves overlapping assignments, including V3\u2019s speaker reception and optional closing sharing.",
+    "Both outputs retain the six required activities in order with continuous 16:00\u201319:00 local coverage, use at most V1 through V6, and agree on the regular staffing for each block. The plan retains accessibility arrangements and trigger, action, and owner details for the AV or Wi-Fi, speaker, volunteer, and shortage fallbacks.",
+    "The supply plan retains the six reviewed catalog lines and coverage of 60 food servings, 72 drinks, and 75 tags, with 13600 cents in purchases and 16400 cents in reserve under the 30000-cent cap. Both revision 1 files remain intact."
+  ],
+  "started_utc": "2026-11-24T23:35:47.602015+00:00",
+  "finished_utc": "2026-11-24T23:37:21.084131+00:00"
+}
